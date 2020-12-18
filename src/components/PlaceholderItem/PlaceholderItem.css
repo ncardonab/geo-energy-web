@@ -1,0 +1,38 @@
+.placeholder-item {
+  box-shadow: 0 4px 10px 0 rgba(33, 33, 33, 0.15);
+  border-radius: 4px;
+  background: #d5d5d5;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* The ::before will be placed absolute to its parent */
+/* overflow: hidden; will prevent the gradient from showing outside our placeholder element */
+
+.placeholder-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -150px;
+  top: 0;
+  height: 100%;
+  width: 100px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    #e6e6e6 50%,
+    transparent 100%
+  );
+  animation: load 1.4s cubic-bezier(0.4, 0, 0.2, 1);
+  animation-iteration-count: infinite;
+}
+
+@keyframes load {
+  from {
+    left: -150px;
+  }
+  to {
+    left: 100%;
+  }
+}
