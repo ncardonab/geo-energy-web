@@ -55,7 +55,7 @@ class NewsSet extends Component {
       return (
         <div className="news-lg">
           <div className="news-title-lg text-light">
-            <div>Geothermal news from around the world.</div>
+            <div>Geothermal news from around the world</div>
           </div>
           <div className="news-cards-lg">
             <News isCharging={isEmpty} side={"left"} news={engNews1} />

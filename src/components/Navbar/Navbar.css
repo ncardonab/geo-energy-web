@@ -13,8 +13,8 @@
   justify-self: start;
   margin: 0 0 0 48px;
   cursor: pointer;
-  font-weight: 100;
-  font-size: 1.2rem;
+  font-weight: 300;
+  font-size: 1.25rem;
 }
 
 .nav-menu {
@@ -32,6 +32,8 @@
   text-decoration: none;
   padding: 0.5rem 1rem;
   color: #474747;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .nav-links:hover {

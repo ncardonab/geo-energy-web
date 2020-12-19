@@ -45,7 +45,7 @@ export default function News({ isCharging, side, news }) {
               ></PlaceholderItem>
             </div>
           ) : (
-            <a href={url} target="_blank">
+            <a href={url} target="_blank" rel="noopener noreferrer">
               {caption}
             </a>
           )}
@@ -61,7 +61,9 @@ export default function News({ isCharging, side, news }) {
         ></div>
         <div className={`info-caption-sm info-caption-sm-${side}`}>
           <h4 className="title-sm">{capitalizedName}</h4>
-          <a href={url}>{caption}</a>
+          <a href={url} target="_blank" rel="noopener noreferrer">
+            {caption}
+          </a>
         </div>
       </div>
     );
