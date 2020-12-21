@@ -19,12 +19,13 @@
   --quaternary-color: rgb(157, 37, 3);
   --light-color: rgba(255, 255, 255, 1);
   --dark-color: rgba(0, 0, 0, 1);
+  --dark-color-text: #212529;
 }
 
 h1 {
   margin: 0;
   font-size: 49px;
-  font-weight: 300;
+  font-weight: lighter;
 }
 
 p {
