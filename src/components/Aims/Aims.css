@@ -1,0 +1,74 @@
+.Aims {
+  height: 512px;
+  width: 100%;
+  background-color: #f4f4f7;
+  padding: 48px;
+}
+
+.aims-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.aims-title {
+  font-size: 48px;
+  font-weight: 300;
+  color: var(--primary-color-text);
+}
+
+.aims-description {
+  font-size: 17.5px;
+  font-weight: 300;
+  width: 53%;
+  margin-top: 40px;
+}
+
+.aims-set {
+  margin-top: auto;
+  height: fit-content;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 9.04vw;
+}
+
+/* Aim.js Styles */
+
+.Aim {
+  height: 177px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.aim-icon {
+  height: 45px;
+  width: 45px;
+}
+
+.aim-title {
+  font-size: 17.5px;
+  font-weight: 500;
+}
+
+/* Breakpoints */
+
+@media screen and (max-width: 710px) {
+  .Aims {
+    padding: 24px;
+    height: 860px;
+  }
+
+  .aims-description {
+    margin-top: 31px;
+    width: fit-content;
+  }
+
+  .aims-set {
+    grid-template-columns: unset;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 18px;
+  }
+}

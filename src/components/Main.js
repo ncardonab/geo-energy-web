@@ -4,6 +4,7 @@ import HomePage from "./Home/HomePage";
 import WhatIsGeothermalEnergy from "./WhatIsGeothermalEnergy/WhatIsGeothermalEnergy";
 import Background from "./Background/Background";
 import NewsSet from "./News/NewsSet";
+import Aims from "./Aims/Aims";
 
 function Main() {
   const [newsSet, setNewsSet] = React.useState(
@@ -33,6 +34,7 @@ function Main() {
       {newsSet}
       <WhatIsGeothermalEnergy />
       <Background />
+      <Aims />
     </div>
   );
 }
