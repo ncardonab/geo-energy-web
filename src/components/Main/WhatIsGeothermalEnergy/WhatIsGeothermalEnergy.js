@@ -1,6 +1,6 @@
 import React from "react";
 import "./WhatIsGeothermalEnergy.css";
-import ViewMoreButton from "../ViewMoreButton/ViewMoreButton";
+import ViewMoreButton from "../../ViewMoreButton/ViewMoreButton";
 
 const WhatIsGeothermalEnergy = () => {
   return (

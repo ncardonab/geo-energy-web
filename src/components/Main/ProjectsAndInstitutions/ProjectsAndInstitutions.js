@@ -1,7 +1,7 @@
 import React from "react";
 import "./ProjectsAndInstitutions.css";
 import { projectsAndInstitutionsInfo } from "./ProjectsAndInstitutionsInfo";
-import Image from "../Image/Image";
+import Image from "../../Image/Image";
 
 function ProjectsAndInstitutions() {
   const projects = projectsAndInstitutionsInfo.slice(0, 3);

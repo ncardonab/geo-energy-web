@@ -1,10 +1,10 @@
-import Image1 from "../../assets/IGCP icon.png";
-import Image2 from "../../assets/IUGS icon.png";
-import Image3 from "../../assets/UNESCO icon.png";
-import Image4 from "../../assets/udm.png";
-import Image5 from "../../assets/ihlla.png";
-import Image6 from "../../assets/inrs icon.png";
-import Image7 from "../../assets/cega.png";
+import Image1 from "../../../assets/IGCP icon.png";
+import Image2 from "../../../assets/IUGS icon.png";
+import Image3 from "../../../assets/UNESCO icon.png";
+import Image4 from "../../../assets/udm.png";
+import Image5 from "../../../assets/ihlla.png";
+import Image6 from "../../../assets/inrs icon.png";
+import Image7 from "../../../assets/cega.png";
 
 export const projectsAndInstitutionsInfo = [
   {

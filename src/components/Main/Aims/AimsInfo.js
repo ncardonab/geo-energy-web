@@ -1,6 +1,6 @@
-import icon1 from "../../assets/icons8-ophthalmology-100.svg";
-import icon2 from "../../assets/Checklist.svg";
-import icon3 from "../../assets/icons8-tree-structure-100.svg";
+import icon1 from "../../../assets/icons8-ophthalmology-100.svg";
+import icon2 from "../../../assets/Checklist.svg";
+import icon3 from "../../../assets/icons8-tree-structure-100.svg";
 
 export const aimsInfo = [
   {

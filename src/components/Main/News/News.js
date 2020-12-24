@@ -1,5 +1,5 @@
 import React from "react";
-import PlaceholderItem from "../PlaceholderItem/PlaceholderItem";
+import PlaceholderItem from "../../PlaceholderItem/PlaceholderItem";
 import "./News.css";
 
 export default function News({ isCharging, side, news }) {

@@ -1,12 +1,10 @@
 import React from "react";
-import NavBar from "./Navbar/Navbar";
 import HomePage from "./Home/HomePage";
 import WhatIsGeothermalEnergy from "./WhatIsGeothermalEnergy/WhatIsGeothermalEnergy";
 import Background from "./Background/Background";
 import NewsSet from "./News/NewsSet";
 import Aims from "./Aims/Aims";
 import ProjectsAndInstitutions from "./ProjectsAndInstitutions/ProjectsAndInstitutions";
-import Footer from "./Footer/Footer";
 
 function Main() {
   const [newsSet, setNewsSet] = React.useState(
@@ -31,14 +29,12 @@ function Main() {
 
   return (
     <div>
-      <NavBar />
       <HomePage />
       {newsSet}
       <WhatIsGeothermalEnergy />
       <Background />
       <Aims />
       <ProjectsAndInstitutions />
-      <Footer />
     </div>
   );
 }

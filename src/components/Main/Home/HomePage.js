@@ -1,6 +1,6 @@
 import React from "react";
 import "./HomePage.css";
-import Background from "../../assets/Cascada.png";
+import Background from "../../../assets/Cascada.png";
 import NewsSet from "../News/NewsSet";
 
 function HomePage() {

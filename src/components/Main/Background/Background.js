@@ -1,6 +1,6 @@
 import React from "react";
 import "./Background.css";
-import ViewMoreButton from "../ViewMoreButton/ViewMoreButton";
+import ViewMoreButton from "../../ViewMoreButton/ViewMoreButton";
 
 function Background() {
   return (
