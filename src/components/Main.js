@@ -6,6 +6,7 @@ import Background from "./Background/Background";
 import NewsSet from "./News/NewsSet";
 import Aims from "./Aims/Aims";
 import ProjectsAndInstitutions from "./ProjectsAndInstitutions/ProjectsAndInstitutions";
+import Footer from "./Footer/Footer";
 
 function Main() {
   const [newsSet, setNewsSet] = React.useState(
@@ -37,6 +38,7 @@ function Main() {
       <Background />
       <Aims />
       <ProjectsAndInstitutions />
+      <Footer />
     </div>
   );
 }
