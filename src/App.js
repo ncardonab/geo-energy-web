@@ -14,7 +14,7 @@ function App() {
         <Route path="/" component={Main} exact />
         <Route path="/team" component={Team} />
       </Switch>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

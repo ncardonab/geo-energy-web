@@ -9,7 +9,7 @@ function Footer() {
         <div className="footer-follow-us">
           <p>Follow us: </p>
           {footerInfo.map((info, index) => {
-            const { url, icon } = info;
+            const { url, icon, alt } = info;
             return (
               <a
                 key={index}
@@ -18,7 +18,7 @@ function Footer() {
                 rel="noopener noreferrer"
                 className="footer-icon"
               >
-                <img src={icon}></img>
+                <img src={icon} alt={alt}></img>
               </a>
             );
           })}

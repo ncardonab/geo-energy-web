@@ -1,5 +1,5 @@
 import React from "react";
-import viewMoreIcon from "../../assets/View More Icon 30x30.svg";
+import viewMoreIcon from "../../assets/SVGs/View More Icon 30x30.svg";
 import "./ViewMoreButton.css";
 
 function ViewMoreButton() {
