@@ -1,12 +1,13 @@
 import React from "react";
 import ProjectLeaders from "./ProjectLeaders/ProjectLeaders";
+import Secretary from "./Secretary/Secretary";
 
 function Team() {
   return (
-    <div>
+    <>
       <ProjectLeaders />
-      <div className="holis" style={{ height: 500, background: "green" }}></div>
-    </div>
+      <Secretary />
+    </>
   );
 }
 
