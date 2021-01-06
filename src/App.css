@@ -21,6 +21,7 @@
   --light-color: rgba(255, 255, 255, 1);
   --dark-color: rgba(0, 0, 0, 1);
   --dark-color-text: #212529;
+  --box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.05);
 }
 
 h1 {

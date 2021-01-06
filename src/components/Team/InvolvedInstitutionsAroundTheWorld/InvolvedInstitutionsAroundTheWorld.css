@@ -1,0 +1,120 @@
+.IIAW {
+  height: fit-content;
+  background-color: #e6e6e6;
+  padding: 24px;
+}
+
+.iiaw-title {
+  text-align: center;
+  font-size: 32px;
+  color: var(--dark-color-text);
+}
+
+.iiaw-btns-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.iiaw-continents-btns-container,
+.iiaw-countries-btns-container,
+.iiaw-institutions-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.iiaw-breadcrumb {
+  align-self: center;
+  color: #474747;
+  margin: 24px 0px 0px 0px;
+}
+
+.iiaw-institutions-cards-container {
+  gap: 15px;
+}
+
+.card:hover {
+  transform: scale(1.023);
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 310px;
+  transition: all 0.3s ease-in-out;
+}
+
+.logo-container {
+  position: relative;
+  height: 78px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-shadow: var(--box-shadow);
+  -webkit-box-shadow: var(--box-shadow);
+  -moz-box-shadow: var(--box-shadow);
+  transition: all 0.3s ease-in-out;
+}
+
+.logo-container:hover {
+  transform: scale(1.023);
+}
+
+.logo-container:hover > .notch {
+  display: block;
+  opacity: 1;
+}
+
+.notch {
+  opacity: 0;
+  position: absolute;
+  height: 10px;
+  width: 170px;
+  top: -5px;
+  left: 25%;
+  background-color: #ffffff;
+  transition: all 0.25s ease-in-out;
+  box-shadow: -1px 0px 12px -1px rgba(148, 148, 148, 0.75);
+  -webkit-box-shadow: -1px 0px 12px -1px rgba(148, 148, 148, 0.75);
+  -moz-box-shadow: -1px 0px 12px -1px rgba(148, 148, 148, 0.75);
+}
+
+.card-logo {
+  max-height: 50px;
+  margin-right: 18px;
+}
+
+.card-text {
+  color: #474747;
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.card-text:hover {
+  text-decoration: underline;
+}
+
+.background-img-container {
+  display: none;
+}
+
+@media screen and (min-width: 760px) {
+  .background-img-container {
+    display: block;
+  }
+
+  .card {
+    height: 213px;
+  }
+
+  .logo-container {
+    position: absolute;
+    bottom: 0;
+  }
+}
