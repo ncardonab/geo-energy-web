@@ -3,7 +3,14 @@
   width: 100%;
   height: 92.31%;
   display: flex;
+}
+
+.Slider.active {
   border-bottom: 1px solid antiquewhite;
+}
+
+.Slider.dark.active {
+  border-bottom: 1px solid #474747aa;
 }
 
 .slide {

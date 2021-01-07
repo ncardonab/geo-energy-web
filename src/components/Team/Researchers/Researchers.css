@@ -1,0 +1,94 @@
+.Researchers {
+  background-color: rgb(245, 245, 245);
+  height: 100vh;
+  padding: 24px;
+  overflow: hidden;
+}
+
+.researchers-container {
+  height: 100%;
+}
+
+.researchers-title {
+  font-size: 40px;
+  font-weight: 300;
+  color: var(--primary-color-text);
+  text-align: center;
+}
+
+.researcher {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.researcher-photo {
+  max-width: 170px;
+  margin-bottom: 24px;
+}
+
+.researcher-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.researcher-name,
+.researcher-current-institution {
+  color: var(--dark-color-text);
+  text-align: center;
+}
+
+.researcher-name {
+  font-weight: 400;
+  font-size: 21px;
+  margin-bottom: 16px;
+}
+
+.researcher-current-institution {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
+.researcher-keywords {
+  border-top: 1px solid #474747aa;
+  border-bottom: 1px solid #474747aa;
+  padding: 16px 0px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  width: 80%;
+}
+
+.researchers-by-4 {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  gap: 20px;
+}
+
+@media screen and (min-width: 901px) {
+  .researcher {
+    margin: 0;
+  }
+
+  .researcher-keywords {
+    width: 100%;
+  }
+
+  .researchers-title {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1010px) {
+  .Researchers {
+    padding: 48px;
+  }
+}
