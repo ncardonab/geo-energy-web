@@ -1,0 +1,27 @@
+.Header {
+  height: calc(100vh - 53px);
+  background-image: url("../../../assets/Krafla Geothermal Power Station blurred.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 24px;
+}
+
+.header-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.header-title {
+  color: #f4f4f7;
+  font-size: 49px;
+  font-weight: 300;
+  margin-bottom: 140px;
+}
+
+.header-title > span {
+  color: var(--primary-color-text);
+  font-size: 49px;
+}

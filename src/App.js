@@ -5,6 +5,7 @@ import NavBar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import { Route, Switch } from "react-router-dom";
 import Team from "./components/Team/Team";
+import Activities from "./components/Activities/Activities";
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
       <Switch>
         <Route path="/" component={Main} exact />
         <Route path="/team" component={Team} />
+        <Route path="/activities" component={Activities} />
       </Switch>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
