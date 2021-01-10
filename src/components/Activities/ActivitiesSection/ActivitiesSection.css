@@ -1,0 +1,88 @@
+.ActivitiesSection {
+  background-color: #efefef;
+  height: fit-content;
+  padding: 24px;
+}
+
+.activities {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 48px;
+}
+
+.image-card:hover {
+  transform: scale(1.023);
+}
+
+.image-card-background-img {
+  filter: brightness(90%);
+  transition: all 0.5s ease-in-out;
+}
+
+.image-card {
+  width: 226px;
+  height: 286px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: var(--box-shadow);
+  -webkit-box-shadow: var(--box-shadow);
+  -moz-box-shadow: var(--box-shadow);
+}
+
+.text-container {
+  position: relative;
+  top: -5px;
+  height: 78px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-shadow: var(--box-shadow);
+  -webkit-box-shadow: var(--box-shadow);
+  -moz-box-shadow: var(--box-shadow);
+  transition: all 0.5s ease-in-out;
+}
+
+.text-container:hover {
+  transform: scale(1.023);
+}
+
+.text-container:hover > .notch {
+  display: block;
+  opacity: 1;
+}
+
+.notch {
+  opacity: 0;
+  position: absolute;
+  height: 10px;
+  width: 70px;
+  top: -5px;
+  left: 35%;
+  background-color: #ffffff;
+  transition: all 0.25s ease-in-out;
+  box-shadow: -1px 0px 12px -1px rgba(148, 148, 148, 0.75);
+  -webkit-box-shadow: -1px 0px 12px -1px rgba(148, 148, 148, 0.75);
+  -moz-box-shadow: -1px 0px 12px -1px rgba(148, 148, 148, 0.75);
+}
+
+.image-card-text {
+  color: #474747;
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.image-card-text:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 1024px) {
+  .ActivitiesSection {
+    padding: 48px;
+  }
+}

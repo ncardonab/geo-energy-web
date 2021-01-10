@@ -25,3 +25,9 @@
   color: var(--primary-color-text);
   font-size: 49px;
 }
+
+@media screen and (min-width: 960px) {
+  .Header {
+    padding: 48px;
+  }
+}
