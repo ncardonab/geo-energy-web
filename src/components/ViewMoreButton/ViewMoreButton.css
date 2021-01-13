@@ -8,6 +8,8 @@
   border: none;
   align-items: center;
   cursor: pointer;
+  text-decoration: none;
+  color: #474747;
   transition: all 0.3s ease-in-out;
 }
 
@@ -19,8 +21,6 @@
 .view-more-icon {
   height: 25px;
   width: 25px;
-  fill: green;
-  /* display: inline-block; */
 }
 
 .view-more {
