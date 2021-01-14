@@ -7,6 +7,7 @@ import { Route, Switch } from "react-router-dom";
 import Team from "./components/Team/Team";
 import Activities from "./components/Activities/Activities";
 import WhatIsGeothermalEnergyExtended from "./components/Main/WhatIsGeothermalEnergy/WhatIsGeothermalEnergyExtended/WhatIsGeothermalEnergyExtended";
+import BackgroundExtended from "./components/Main/Background/BackgroundExtended/BackgroundExtended";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           path="/WhatIsGeothermalEnergy"
           component={WhatIsGeothermalEnergyExtended}
         />
+        <Route path="/aimsAndBackground" component={BackgroundExtended} />
       </Switch>
       <Footer />
     </div>

@@ -1,0 +1,132 @@
+.be-header {
+  height: calc(100vh - 53px);
+  padding: 24px;
+  background-image: url("../../../../assets/Villarrica Volcano Blurred.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.be-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.be-title {
+  color: white;
+  margin-bottom: 78px;
+}
+
+.be-title > span {
+  color: var(--primary-color-text);
+  font-size: 48px;
+  font-weight: 300;
+}
+
+.be-caption-1-text,
+.be-caption-2-text,
+.be-aim-text,
+.be-aim-list-item {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.be-caption-1,
+.be-caption-2 {
+  height: fit-content;
+  padding: 96px 24px;
+}
+
+.be-caption-2-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.be-caption-2-img {
+  height: 86px;
+  margin-bottom: 48px;
+}
+
+.be-aim {
+  height: fit-content;
+}
+
+.be-aim-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.be-aim-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.be-aim-icon {
+  height: 86px;
+  margin: 24px;
+}
+
+.be-aim-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.be-aim-list-item {
+  margin: 12px 0px;
+}
+
+@media screen and (min-width: 480px) {
+  .be-caption-1-container,
+  .be-caption-2-container,
+  .be-aim-container {
+    width: 80vw;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .be-header {
+    padding: 48px;
+  }
+
+  .be-aim {
+    height: 70vh;
+  }
+
+  .be-aim-container {
+    justify-content: center;
+  }
+
+  .be-aim-text-container,
+  .be-aim-text-container.row-reverse {
+    align-items: center;
+  }
+
+  .be-aim-text-container {
+    flex-direction: row;
+  }
+
+  .be-aim-text-container.row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .be-aim-text-container.row-reverse > .be-aim-text {
+    margin-right: auto;
+  }
+
+  .be-aim-list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .be-aim-list-item {
+    width: 25%;
+  }
+}

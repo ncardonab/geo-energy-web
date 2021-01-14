@@ -14,7 +14,7 @@ function Background() {
             international research forces to unlock and strengthen geothermal
             exploitation of the Americas and Europe” (2016-2019).
           </div>
-          <ViewMoreButton></ViewMoreButton>
+          <ViewMoreButton path="/aimsAndBackground"></ViewMoreButton>
         </div>
       </div>
     </div>

@@ -15,10 +15,6 @@ function Aims() {
         </div>
         <div className="aims-set">
           {aimsInfo.map((info, index) => {
-            console.log(
-              "🚀 ~ file: Aims.js ~ line 19 ~ AimsInfo.map ~ info",
-              info
-            );
             return <Aim key={index} info={info} />;
           })}
         </div>
