@@ -1,5 +1,5 @@
 .ProjectLeaders {
-  height: calc(100vh - 53px);
+  height: 100vh;
   background-color: #474747;
   padding: 24px;
   overflow: hidden;
@@ -16,6 +16,7 @@
   color: var(--primary-color-text);
   text-align: center;
   font-size: 36px;
+  margin-top: 53px;
 }
 
 .project-leader {

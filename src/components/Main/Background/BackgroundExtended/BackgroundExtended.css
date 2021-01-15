@@ -1,5 +1,5 @@
 .be-header {
-  height: calc(100vh - 53px);
+  height: 100vh;
   padding: 24px;
   background-image: url("../../../../assets/Villarrica Volcano Blurred.png");
   background-position: center;

@@ -6,18 +6,25 @@ import "./Navbar.css";
 class NavBar extends Component {
   state = {
     clicked: false,
+    body: document.querySelector("body"),
   };
 
   handleClick = () => {
-    this.setState({
-      clicked: !this.state.clicked,
-    });
+    if (window.innerWidth <= 960) {
+      this.setState({
+        clicked: !this.state.clicked,
+      });
+      this.state.body.classList.toggle("disabledScroll");
+    }
   };
 
   render() {
     return (
-      <div className="NavbarItems">
-        <h4 className="navbar-logo">
+      <div className="Navbar">
+        <h4
+          className="navbar-logo"
+          onClick={this.state.clicked ? this.handleClick : undefined}
+        >
           <Link to="/">Home</Link>
         </h4>
         <div className="menu-icon" onClick={this.handleClick}>
@@ -31,10 +38,10 @@ class NavBar extends Component {
             className={`line line-3 ${this.state.clicked ? "active" : ""}`}
           ></div>
         </div>
-        <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
+        <ul className={`nav-menu ${this.state.clicked ? "active" : ""}`}>
           {MenuItems.map((item, index) => {
             return (
-              <li key={index}>
+              <li key={index} onClick={this.handleClick}>
                 <Link to={item.url} className={item.cName}>
                   {item.title}
                 </Link>

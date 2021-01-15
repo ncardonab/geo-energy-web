@@ -1,5 +1,5 @@
 .jumbotron {
-  height: calc(100vh - 53px);
+  height: 100vh;
 }
 
 .landing-page-container {
@@ -9,7 +9,7 @@
 
 .main-background {
   position: absolute;
-  height: calc(100% - 53px);
+  height: 100%;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -88,11 +88,11 @@
 
 @media screen and (max-width: 540px) {
   .jumbotron {
-    height: 80vh;
+    height: calc(53px + 80vh);
   }
 
   .main-background {
-    height: 80vh;
+    height: calc(53px + 80vh);
   }
 
   .landing-page-container {
