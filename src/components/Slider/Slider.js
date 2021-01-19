@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Slider.css";
 import nextIcon from "../../assets/SVGs/Next.svg";
 import prevIcon from "../../assets/SVGs/Prev.svg";
@@ -8,9 +8,28 @@ import darkPrevIcon from "../../assets/SVGs/Dark Prev.svg";
 function Slider({ Component, slides, indicators = true, isDark = false }) {
   const [x, setX] = useState(0);
 
+  const countRef = useRef(x);
+  countRef.current = x;
+
+  // Effect related to the slider timer.
+  useEffect(() => {
+    // This is the effect.
+    const timeout = setTimeout(() => {
+      setX(countRef.current === -100 * (slides.length - 1) ? 0 : x - 100);
+    }, 3000);
+
+    // When the component will unmount calls the cleanup function (that was previously saved for this moment) to get rid of the set time out.
+    return () => clearTimeout(timeout);
+
+    // Whenever the 'x' state value changes calls the effect.
+  }, [x]);
+
+  // Effect related to the windows resize event.
   useEffect(() => {
     const updateX = () => {
       const newWidth = window.innerWidth;
+
+      // This is a way of skipping events.
       if (newWidth > 900) {
         setX(0);
       }

@@ -23,7 +23,7 @@ function App() {
         />
         <Route path="/aimsAndBackground" component={BackgroundExtended} />
       </Switch>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
