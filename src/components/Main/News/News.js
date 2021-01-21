@@ -18,10 +18,10 @@ export default function News({ isCharging, side, news }) {
     ? ""
     : name[0].toUpperCase() + name.slice(1);
 
-  if (window.innerWidth > 540) {
+  if (window.innerWidth > 1024) {
     return (
       <div className={`news-card news-card-${side}`}>
-        <div className="notch"></div>
+        <div className="news-notch"></div>
         <div className="thumbnail-container">
           {isCharging ? (
             <PlaceholderItem height="130px"></PlaceholderItem>
@@ -52,7 +52,7 @@ export default function News({ isCharging, side, news }) {
         </div>
       </div>
     );
-  } else if (window.innerWidth <= 540) {
+  } else if (window.innerWidth <= 1024) {
     return (
       <div className="news-card-sm">
         <div

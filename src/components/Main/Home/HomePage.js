@@ -1,26 +1,26 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./HomePage.css";
 import Background from "../../../assets/Cascada.png";
 import NewsSet from "../News/NewsSet";
 
 function HomePage() {
   const [newsSet, setNewsSet] = React.useState(
-    window.innerWidth > 540 ? <NewsSet></NewsSet> : ""
+    window.innerWidth > 1024 ? <NewsSet></NewsSet> : ""
   );
 
-  // Basically the previousWidth is the previous window's inner width
-  let previousWidth = window.innerWidth;
+  // Basically the previousWidthRef is the previous window's inner width
+  const previousWidthRef = useRef(window.innerWidth);
+  previousWidthRef.current = window.innerWidth;
 
   React.useEffect(() => {
     function handleResize() {
-      if (window.innerWidth <= 540 && previousWidth > 540) {
-        // If passes through a breakpoint from right to left hides the news
+      if (window.innerWidth <= 1024 && previousWidthRef.current > 1024) {
+        // If passes through a breakpoint from right to left will show the sm news
         setNewsSet();
-      } else if (window.innerWidth > 540 && previousWidth <= 540) {
-        // If passes through a breakpoint from left to right shows the news
+      } else if (window.innerWidth > 1024 && previousWidthRef.current < 1024) {
+        // If passes through a breakpoint from left to rigth will hide the sm news
         setNewsSet(<NewsSet />);
       }
-      previousWidth = window.innerWidth;
     }
 
     window.addEventListener("resize", handleResize);

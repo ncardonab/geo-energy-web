@@ -38,7 +38,7 @@ class NewsSet extends Component {
 
     const [engNews1, engNews2, espNews1] = this.state.news;
 
-    if (window.innerWidth <= 540) {
+    if (window.innerWidth <= 1024) {
       return (
         <div className="news-sm">
           <div className="news-title-sm text-light">
@@ -51,7 +51,7 @@ class NewsSet extends Component {
           </div>
         </div>
       );
-    } else if (window.innerWidth > 540) {
+    } else if (window.innerWidth > 1024) {
       return (
         <div className="news-lg">
           <div className="news-title-lg text-light">
