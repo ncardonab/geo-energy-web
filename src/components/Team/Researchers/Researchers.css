@@ -1,6 +1,6 @@
 .Researchers {
   background-color: rgb(245, 245, 245);
-  height: 100vh;
+  height: fit-content;
   padding: 24px;
   overflow: hidden;
 }
@@ -14,6 +14,7 @@
   font-weight: 300;
   color: var(--primary-color-text);
   text-align: center;
+  margin: 24px 0px;
 }
 
 .researcher {
@@ -57,12 +58,17 @@
   border-top: 1px solid #474747aa;
   border-bottom: 1px solid #474747aa;
   padding: 16px 0px;
+  margin: -5px 0 0 -5px;
   margin-bottom: 16px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 5px;
+  /* gap: 5px; */
   width: 80%;
+}
+
+.researcher-keywords > * {
+  margin: 5px 0 0 5px;
 }
 
 .researchers-by-4 {

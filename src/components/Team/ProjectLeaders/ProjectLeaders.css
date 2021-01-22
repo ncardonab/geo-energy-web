@@ -16,7 +16,7 @@
   color: var(--primary-color-text);
   text-align: center;
   font-size: 36px;
-  margin-top: 53px;
+  margin-top: 8vh;
 }
 
 .project-leader {
@@ -29,7 +29,7 @@
 }
 
 .project-leader-photo {
-  max-height: 190px;
+  max-height: 30vh;
 }
 
 .project-leader-info-container {
@@ -60,15 +60,34 @@
   color: antiquewhite;
 }
 
-.fa.fa-linkedin {
-  height: 21px;
-}
-
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 540px) and (max-height: 657px) {
   .ProjectLeaders {
     padding: 48px 48px 24px 48px;
   }
+  .project-leaders-title {
+    font-size: 32px;
+    text-align: left;
+  }
 
+  .project-leader {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .project-leader-name {
+    text-align: left;
+  }
+
+  .project-leader-info-container {
+    align-items: flex-start;
+  }
+
+  .project-leader-description {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1024px) {
   .project-leaders-title {
     font-size: 48px;
     text-align: left;
@@ -88,7 +107,7 @@
   }
 
   .project-leader-photo {
-    max-height: 260px;
+    max-height: 40vh;
   }
 
   .project-leader-name {
@@ -98,5 +117,15 @@
   .project-leader-description,
   .project-leader-country-and-city {
     font-size: 17.5px;
+  }
+}
+
+@media screen and (max-height: 375px) {
+  .ProjectLeaders {
+    padding: 48px 48px 12px 48px;
+  }
+
+  .project-leader-linkedin {
+    height: 80%;
   }
 }

@@ -20,9 +20,17 @@
 .iiaw-institutions-cards-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  /* Emulating gap property */
+  margin: -5px 0 0 -5px;
   justify-content: center;
   margin-top: 24px;
+}
+
+.iiaw-continents-btns-container > *,
+.iiaw-countries-btns-container > *,
+.iiaw-institutions-cards-container > * {
+  /* Emulating gap property */
+  margin: 5px 0 0 5px;
 }
 
 .iiaw-breadcrumb {
@@ -31,8 +39,9 @@
   margin: 24px 0px 0px 0px;
 }
 
-.iiaw-institutions-cards-container {
-  gap: 15px;
+.iiaw-institutions-cards-container > * {
+  /* Emulating gap property */
+  margin: 15px 0 0 15px;
 }
 
 .card:hover {
@@ -77,6 +86,7 @@
   width: 170px;
   top: -5px;
   left: 25%;
+  border-radius: 5px;
   background-color: #ffffff;
   transition: all 0.25s ease-in-out;
   box-shadow: -1px 0px 12px -1px rgba(148, 148, 148, 0.75);
