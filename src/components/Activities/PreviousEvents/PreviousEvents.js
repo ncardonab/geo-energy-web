@@ -1,6 +1,6 @@
 import React from "react";
-import { activities } from "./ActivitiesInfo";
-import "./ActivitiesSection.css";
+import { activities } from "./PreviousEventsInfo";
+import "./PreviousEvents.css";
 
 function ImageCard({ activity }) {
   const { name, description, background, url } = activity;
@@ -37,9 +37,9 @@ function ImageCard({ activity }) {
   );
 }
 
-function ActivitiesSection() {
+function PreviousEvents() {
   return (
-    <div className="ActivitiesSection">
+    <div className="PreviousEvents">
       <div className="activities-section-container">
         <div className="activities">
           {activities.map((activity, index) => (
@@ -51,4 +51,4 @@ function ActivitiesSection() {
   );
 }
 
-export default ActivitiesSection;
+export default PreviousEvents;
