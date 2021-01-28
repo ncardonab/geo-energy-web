@@ -20,8 +20,8 @@ function UpcomingEvent({ info, isFirst, isLast }) {
   ];
 
   const { date, activityManager, description, url, location } = info;
-  const month = months[date.getMonth() - 1].substring(0, 3);
-  const day = date.getDay();
+  const month = months[date.getMonth()].substring(0, 3);
+  const day = date.getDate();
   const hours = date.getHours();
   const minutes =
     date.getMinutes().toString().length === 1

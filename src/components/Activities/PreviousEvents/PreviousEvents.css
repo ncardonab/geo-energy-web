@@ -1,19 +1,43 @@
-.PreviousEvents {
+.previous-events-header {
+  height: 100px;
+  background-color: rgb(230, 233, 238);
+  padding: 24px;
+  display: flex;
+}
+
+.previous-events-title {
+  margin: auto 0;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.previous-events-container {
   background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   height: fit-content;
   padding: 24px;
 }
 
-.activities {
+.EventsGroupedByYear {
   display: flex;
-  gap: 25px;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0 48px;
+  flex-direction: column;
 }
 
-.image-card:hover {
-  transform: scale(1.023);
+.egby-year {
+  margin: 48px 0 24px 0;
+  text-align: center;
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.egby-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .image-card-background-img {
@@ -25,13 +49,18 @@
   width: 226px;
   height: 286px;
   border-radius: 8px;
+  margin: 20px 0 0 20px;
   transition: all 0.3s ease-in-out;
   box-shadow: var(--box-shadow);
   -webkit-box-shadow: var(--box-shadow);
   -moz-box-shadow: var(--box-shadow);
 }
 
-.text-container {
+.image-card:hover {
+  transform: scale(1.023);
+}
+
+.image-card-info-container {
   position: relative;
   top: -5px;
   height: 78px;
@@ -47,22 +76,24 @@
   transition: all 0.5s ease-in-out;
 }
 
-.text-container:hover {
+.image-card-info-container:hover {
   transform: scale(1.023);
 }
 
-.text-container:hover > .notch {
+.image-card-info-container:hover > .image-card-notch {
   display: block;
   opacity: 1;
 }
 
-.notch {
+.image-card-notch {
   opacity: 0;
   position: absolute;
   height: 10px;
-  width: 70px;
+  width: 30%;
+  border-radius: 5px;
   top: -5px;
-  left: 35%;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #ffffff;
   transition: all 0.25s ease-in-out;
   box-shadow: -1px 0px 12px -1px rgba(148, 148, 148, 0.75);
@@ -70,9 +101,26 @@
   -moz-box-shadow: -1px 0px 12px -1px rgba(148, 148, 148, 0.75);
 }
 
+.image-card-text-container {
+  display: flex;
+  align-items: center;
+}
+
+.image-card-text-date-container {
+  text-align: center;
+  margin-right: 20px;
+}
+
+.image-card-text-day,
+.image-card-text-month {
+  font-size: 24px;
+  color: #474747;
+  font-weight: normal;
+}
+
 .image-card-text {
   color: #474747;
-  font-size: 14px;
+  font-size: 17.5px;
   font-weight: 300;
   text-decoration: none;
 }
@@ -82,7 +130,15 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .ActivitiesSection {
+  .previous-events-header {
+    padding: 0 48px;
+  }
+
+  .previous-events-container {
     padding: 48px;
+  }
+
+  .egby-year {
+    text-align: left;
   }
 }
