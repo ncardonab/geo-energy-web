@@ -40,6 +40,8 @@
   justify-content: center;
 }
 
+/* Image card styles */
+
 .image-card-background-img {
   filter: brightness(90%);
   transition: all 0.5s ease-in-out;
@@ -123,6 +125,7 @@
   font-size: 17.5px;
   font-weight: 300;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .image-card-text:hover {
