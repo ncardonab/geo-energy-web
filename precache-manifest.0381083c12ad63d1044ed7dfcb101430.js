@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6d71795166334193e6fee9f2fd72591f",
+    "revision": "18661938d0709cdcc8bed95807c8963e",
     "url": "/geo-energy-web/index.html"
   },
   {
