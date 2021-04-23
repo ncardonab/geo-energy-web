@@ -1,0 +1,30 @@
+.view-more-btn {
+  width: fit-content /*155.47px*/;
+  height: 38.57px;
+  background-color: rgb(210, 210, 210);
+  border-radius: 37px;
+  padding: 5px 8.4px;
+  display: flex;
+  border: none;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: #474747;
+  transition: all 0.3s ease-in-out;
+}
+
+.view-more-btn:hover,
+.view-more-btn:active {
+  background-color: rgb(189, 188, 188);
+}
+
+.view-more-icon {
+  height: 25px;
+  width: 25px;
+}
+
+.view-more {
+  font-size: 17px;
+  font-weight: 300;
+  margin-left: 5px;
+}

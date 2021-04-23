@@ -1,0 +1,35 @@
+.gallery-header {
+  height: 100vh;
+  background-image: url("../../assets/Gallery Background Image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 24px;
+  display: flex;
+}
+
+h1.gallery-title {
+  color: white;
+  margin-top: auto;
+  margin-bottom: 15%;
+}
+
+.gallery-section {
+  background-color: #f4f4f7;
+  padding: 24px;
+}
+
+.gallery-section-container {
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 0 0 -20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .gallery-header,
+  .gallery-section {
+    padding: 48px;
+  }
+}

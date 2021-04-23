@@ -1,0 +1,78 @@
+.UpcomingEvent {
+  background-color: #ffffff;
+  padding: 12px;
+  border: 0.5px solid #707070;
+  border-bottom: none;
+  max-width: 735px;
+  margin: auto;
+}
+
+.UpcomingEvent.first-one {
+  border-radius: 5px 5px 0 0;
+}
+
+.UpcomingEvent.last-one {
+  border-radius: 0 0 5px 5px;
+  border-bottom: 0.5px solid #707070;
+}
+
+.upcoming-event-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upcoming-event-date {
+  text-align: center;
+  color: #474747;
+  font-size: 17.5px;
+  font-weight: 300;
+}
+
+.upcoming-event-hour {
+  text-align: center;
+  color: #474747;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.upcoming-event-description-container {
+  margin: 0 20px;
+  /* max-width: 50%; */
+}
+
+.upcoming-event-manager {
+  text-transform: uppercase;
+  color: #707070;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.upcoming-event-description {
+  color: #474747;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.icon-pin {
+  height: 30px;
+  width: 21.73px;
+}
+
+.icon-camera {
+  height: 18.48px;
+  width: 31.01px;
+}
+
+@media screen and (min-width: 480px) {
+  .UpcomingEvent {
+    padding: 24px;
+  }
+
+  .upcoming-event-manager {
+    font-size: 14px;
+  }
+  .upcoming-event-description {
+    font-size: 20px;
+  }
+}

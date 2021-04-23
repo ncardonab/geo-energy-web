@@ -1,0 +1,131 @@
+.ProjectLeaders {
+  height: 100vh;
+  background-color: #474747;
+  padding: 24px;
+  overflow: hidden;
+}
+
+.project-leaders-container {
+  height: 100%;
+  /* Probably will be remove this two properties */
+  display: flex;
+  flex-direction: column;
+}
+
+.project-leaders-title {
+  color: var(--primary-color-text);
+  text-align: center;
+  font-size: 36px;
+  margin-top: 8vh;
+}
+
+.project-leader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+}
+
+.project-leader-photo {
+  max-height: 30vh;
+}
+
+.project-leader-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
+}
+
+.project-leader-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: antiquewhite;
+  text-align: center;
+}
+
+.project-leader-description {
+  font-size: 14px;
+  font-weight: 300;
+  color: antiquewhite;
+  text-align: center;
+}
+
+.project-leader-country-and-city {
+  font-size: 14px;
+  font-weight: 300;
+  color: antiquewhite;
+}
+
+@media screen and (min-width: 540px) and (max-height: 657px) {
+  .ProjectLeaders {
+    padding: 48px 48px 24px 48px;
+  }
+  .project-leaders-title {
+    font-size: 32px;
+    text-align: left;
+  }
+
+  .project-leader {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .project-leader-name {
+    text-align: left;
+  }
+
+  .project-leader-info-container {
+    align-items: flex-start;
+  }
+
+  .project-leader-description {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .project-leaders-title {
+    font-size: 48px;
+    text-align: left;
+  }
+
+  .project-leader {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .project-leader-info-container {
+    align-items: flex-start;
+  }
+
+  .project-leader-description {
+    text-align: start;
+  }
+
+  .project-leader-photo {
+    max-height: 40vh;
+  }
+
+  .project-leader-name {
+    font-size: 32px;
+  }
+
+  .project-leader-description,
+  .project-leader-country-and-city {
+    font-size: 17.5px;
+  }
+}
+
+@media screen and (max-height: 375px) {
+  .ProjectLeaders {
+    padding: 48px 48px 12px 48px;
+  }
+
+  .project-leader-linkedin {
+    height: 80%;
+  }
+}

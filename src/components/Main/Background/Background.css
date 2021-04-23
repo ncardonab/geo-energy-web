@@ -1,0 +1,61 @@
+.bg-img {
+  height: 400px;
+  background-image: url("../../../assets/thermal-spring-63080_960_720.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.bg-img::before {
+  position: absolute;
+  height: inherit;
+  width: 100%;
+  background-color: inherit;
+  content: " ";
+  z-index: 0;
+}
+
+.bg-container {
+  position: absolute;
+  padding: 48px;
+  z-index: 1000;
+}
+
+.bg-title {
+  font-weight: 300;
+}
+
+.bg-text-container {
+  height: fit-content;
+  width: 75vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  left: 0;
+  padding: 35px 48px 35px 48px;
+  border-radius: 0px 5px 5px 0px;
+  margin-top: 36px;
+}
+
+.bg-text {
+  font-size: 17.5px;
+  font-weight: 100;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 640px) {
+  .bg-container {
+    padding: 24px;
+  }
+
+  .bg-text-container {
+    width: 96.72vw;
+    border-radius: 0;
+    padding: 24px;
+  }
+
+  .bg-img {
+    height: 540px;
+  }
+}

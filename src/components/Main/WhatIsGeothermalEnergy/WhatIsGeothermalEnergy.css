@@ -1,0 +1,59 @@
+.WhatIsGeothermalEnergy {
+  height: 540px;
+  background-color: white;
+  padding: 48px;
+}
+
+.wige-container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "wige-title wige-title . wige-text wige-text";
+  align-items: center;
+}
+
+.wige-text-container {
+  grid-area: wige-text;
+}
+
+.wige-text {
+  font-size: 17.5px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.wige-title {
+  font-size: 49px;
+  font-weight: 300;
+  color: var(--dark-color-text);
+  grid-area: wige-title;
+}
+
+.wige-title-highlight {
+  font-size: 49px;
+  font-weight: 300;
+  color: var(--primary-color-text);
+}
+
+@media screen and (max-width: 600px) {
+  .WhatIsGeothermalEnergy {
+    padding: 24px;
+  }
+
+  .wige-container {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: none;
+    grid-template-areas: "wige-title" "wige-text";
+  }
+
+  .wige-text {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .WhatIsGeothermalEnergy {
+    height: 640px;
+  }
+}
