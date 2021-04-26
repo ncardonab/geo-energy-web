@@ -16,7 +16,9 @@ const WhatIsGeothermalEnergy = () => {
             the interior of the Earth. This includes both the heat stored in
             solid rock as the fluids that found in the pores…
           </div>
-          <ViewMoreButton path={"/WhatIsGeothermalEnergy"}></ViewMoreButton>
+          <ViewMoreButton
+            path={"/geo-energy-web/WhatIsGeothermalEnergy"}
+          ></ViewMoreButton>
         </div>
       </div>
     </div>

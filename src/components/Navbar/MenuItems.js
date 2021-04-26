@@ -1,22 +1,22 @@
 export const MenuItems = [
   {
     title: "Team",
-    url: "/team",
+    url: "/geo-energy-web/team",
     cName: "nav-links",
   },
   {
     title: "Activities",
-    url: "/activities",
+    url: "/geo-energy-web/activities",
     cName: "nav-links",
   },
   {
     title: "Gallery",
-    url: "/gallery",
+    url: "/geo-energy-web/gallery",
     cName: "nav-links",
   },
   {
     title: "More",
-    url: "/more",
+    url: "/geo-energy-web/more",
     cName: "nav-links",
   },
 ];

@@ -8,7 +8,7 @@ import Image7 from "../../../assets/cega.png";
 
 export const projectsAndInstitutionsInfo = [
   {
-    url: "/",
+    url: "/geo-energy-web",
     image: Image1,
     alt: "IGCP logo",
   },

@@ -15,15 +15,15 @@ function App() {
     <div className="App">
       <NavBar />
       <Switch>
-        <Route path="/" component={Main} exact />
-        <Route path="/team" component={Team} />
-        <Route path="/activities" component={Activities} />
+        <Route path="/geo-energy-web" component={Main} exact />
+        <Route path="/geo-energy-web/team" component={Team} />
+        <Route path="/geo-energy-web/activities" component={Activities} />
         <Route
-          path="/WhatIsGeothermalEnergy"
+          path="/geo-energy-web/WhatIsGeothermalEnergy"
           component={WhatIsGeothermalEnergyExtended}
         />
-        <Route path="/aimsAndBackground" component={BackgroundExtended} />
-        <Route path="/gallery" component={Gallery} />
+        <Route path="/geo-energy-web/aimsAndBackground" component={BackgroundExtended} />
+        <Route path="/geo-energy-web/gallery" component={Gallery} />
       </Switch>
       <Footer />
     </div>

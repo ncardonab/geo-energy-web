@@ -25,7 +25,7 @@ class NavBar extends Component {
           className="navbar-logo"
           onClick={this.state.clicked ? this.handleClick : undefined}
         >
-          <Link to="/">Home</Link>
+          <Link to="/geo-energy-web">Home</Link>
         </h4>
         <div className="menu-icon" onClick={this.handleClick}>
           <div
