@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "18661938d0709cdcc8bed95807c8963e",
+    "revision": "fe3a4e494e6f594540f5142b63a46c62",
     "url": "/geo-energy-web/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/geo-energy-web/static/css/2.6f6ba287.chunk.css"
   },
   {
-    "revision": "04f5c087aaa5cb90f5fe",
+    "revision": "a5e49019d9e37ae737fb",
     "url": "/geo-energy-web/static/css/main.8e780e84.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/geo-energy-web/static/js/2.35015e40.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "04f5c087aaa5cb90f5fe",
-    "url": "/geo-energy-web/static/js/main.9e41b5f9.chunk.js"
+    "revision": "a5e49019d9e37ae737fb",
+    "url": "/geo-energy-web/static/js/main.89831a5a.chunk.js"
   },
   {
     "revision": "406093480f820b8b1c80",
