@@ -3,9 +3,9 @@ import PlaceholderItem from "../../PlaceholderItem/PlaceholderItem";
 import "./News.css";
 
 export default function News({ isCharging, side, news }) {
-  const { thumbnail, caption, url } = isCharging
+  const { img, caption, url } = isCharging
     ? {
-        thumbnail: "",
+        img: "",
         caption: "",
         url: "",
       }
@@ -26,7 +26,7 @@ export default function News({ isCharging, side, news }) {
           {isCharging ? (
             <PlaceholderItem height="130px"></PlaceholderItem>
           ) : (
-            <img src={thumbnail} alt="" />
+            <img src={img} alt="" />
           )}
         </div>
         <div className="info-caption">
@@ -57,7 +57,7 @@ export default function News({ isCharging, side, news }) {
       <div className="news-card-sm">
         <div
           className="background-thumbnail-sm"
-          style={{ backgroundImage: `url(${thumbnail})` }}
+          style={{ backgroundImage: `url(${img})` }}
         ></div>
         <div className={`info-caption-sm info-caption-sm-${side}`}>
           <h4 className="title-sm">{capitalizedName}</h4>

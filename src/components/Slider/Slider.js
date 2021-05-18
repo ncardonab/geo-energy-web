@@ -16,7 +16,7 @@ function Slider({ Component, slides, indicators = true, isDark = false }) {
     // This is the effect.
     const timeout = setTimeout(() => {
       setX(countRef.current === -100 * (slides.length - 1) ? 0 : x - 100);
-    }, 3000);
+    }, 6000);
 
     // When the component will unmount calls the cleanup function (that was previously saved for this moment) to get rid of the set time out.
     return () => clearTimeout(timeout);
