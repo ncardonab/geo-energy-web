@@ -4,11 +4,11 @@ import ReactDOM from "react-dom";
 import "font-awesome/css/font-awesome.min.css";
 import "./index.css";
 import App from "./App";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 ReactDOM.render(
-  <BrowserRouter>
+  <Router basename="/geo-energy-web">
     <App />
-  </BrowserRouter>,
+  </Router>,
   document.getElementById("root")
 );

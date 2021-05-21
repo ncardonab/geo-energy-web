@@ -9,7 +9,7 @@ function Aim(props) {
       <img src={icon} alt="aim icon" className="aim-icon" />
       <div className="aim-title">{title}</div>
       <div className="aim-description">{description}</div>
-      <ViewMoreButton path={`/geo-energy-web/aimsAndBackground#${id}`} />
+      <ViewMoreButton path={`/aimsAndBackground#${id}`} />
     </div>
   );
 }
