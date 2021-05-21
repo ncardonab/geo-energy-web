@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/geo-energy-web/static/css/main.8e780e84.chunk.css",
-    "main.js": "/geo-energy-web/static/js/main.76a70713.chunk.js",
-    "main.js.map": "/geo-energy-web/static/js/main.76a70713.chunk.js.map",
+    "main.js": "/geo-energy-web/static/js/main.70418ddb.chunk.js",
+    "main.js.map": "/geo-energy-web/static/js/main.70418ddb.chunk.js.map",
     "runtime-main.js": "/geo-energy-web/static/js/runtime-main.1648d9b0.js",
     "runtime-main.js.map": "/geo-energy-web/static/js/runtime-main.1648d9b0.js.map",
     "static/css/2.6f6ba287.chunk.css": "/geo-energy-web/static/css/2.6f6ba287.chunk.css",
-    "static/js/2.353927b4.chunk.js": "/geo-energy-web/static/js/2.353927b4.chunk.js",
-    "static/js/2.353927b4.chunk.js.map": "/geo-energy-web/static/js/2.353927b4.chunk.js.map",
+    "static/js/2.42247420.chunk.js": "/geo-energy-web/static/js/2.42247420.chunk.js",
+    "static/js/2.42247420.chunk.js.map": "/geo-energy-web/static/js/2.42247420.chunk.js.map",
     "index.html": "/geo-energy-web/index.html",
-    "precache-manifest.4186113d18e7c1391045cb5fcdd317a6.js": "/geo-energy-web/precache-manifest.4186113d18e7c1391045cb5fcdd317a6.js",
+    "precache-manifest.3689abd24c1ba6df0434e5d7a7fd50e9.js": "/geo-energy-web/precache-manifest.3689abd24c1ba6df0434e5d7a7fd50e9.js",
     "service-worker.js": "/geo-energy-web/service-worker.js",
     "static/css/2.6f6ba287.chunk.css.map": "/geo-energy-web/static/css/2.6f6ba287.chunk.css.map",
     "static/css/main.8e780e84.chunk.css.map": "/geo-energy-web/static/css/main.8e780e84.chunk.css.map",
-    "static/js/2.353927b4.chunk.js.LICENSE.txt": "/geo-energy-web/static/js/2.353927b4.chunk.js.LICENSE.txt",
+    "static/js/2.42247420.chunk.js.LICENSE.txt": "/geo-energy-web/static/js/2.42247420.chunk.js.LICENSE.txt",
     "static/media/AGEOCOL.png": "/geo-energy-web/static/media/AGEOCOL.4d2f1b00.png",
     "static/media/Abdelhakim Djebara Argelia.png": "/geo-energy-web/static/media/Abdelhakim Djebara Argelia.efe02ac3.png",
     "static/media/Abdelkader Filali Argelia.png": "/geo-energy-web/static/media/Abdelkader Filali Argelia.fae0b606.png",
@@ -142,8 +142,8 @@
   "entrypoints": [
     "static/js/runtime-main.1648d9b0.js",
     "static/css/2.6f6ba287.chunk.css",
-    "static/js/2.353927b4.chunk.js",
+    "static/js/2.42247420.chunk.js",
     "static/css/main.8e780e84.chunk.css",
-    "static/js/main.76a70713.chunk.js"
+    "static/js/main.70418ddb.chunk.js"
   ]
 }
