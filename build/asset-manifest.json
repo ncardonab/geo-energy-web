@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/geo-energy-web/static/css/main.8e780e84.chunk.css",
-    "main.js": "/geo-energy-web/static/js/main.b9838961.chunk.js",
-    "main.js.map": "/geo-energy-web/static/js/main.b9838961.chunk.js.map",
-    "runtime-main.js": "/geo-energy-web/static/js/runtime-main.1648d9b0.js",
-    "runtime-main.js.map": "/geo-energy-web/static/js/runtime-main.1648d9b0.js.map",
-    "static/css/2.6f6ba287.chunk.css": "/geo-energy-web/static/css/2.6f6ba287.chunk.css",
-    "static/js/2.42247420.chunk.js": "/geo-energy-web/static/js/2.42247420.chunk.js",
-    "static/js/2.42247420.chunk.js.map": "/geo-energy-web/static/js/2.42247420.chunk.js.map",
+    "main.css": "/geo-energy-web/static/css/main.9a1b6eb8.chunk.css",
+    "main.js": "/geo-energy-web/static/js/main.2a22c7d8.chunk.js",
+    "main.js.map": "/geo-energy-web/static/js/main.2a22c7d8.chunk.js.map",
+    "runtime-main.js": "/geo-energy-web/static/js/runtime-main.d7eab0ab.js",
+    "runtime-main.js.map": "/geo-energy-web/static/js/runtime-main.d7eab0ab.js.map",
+    "static/css/2.5b24332c.chunk.css": "/geo-energy-web/static/css/2.5b24332c.chunk.css",
+    "static/js/2.aea8a87c.chunk.js": "/geo-energy-web/static/js/2.aea8a87c.chunk.js",
+    "static/js/2.aea8a87c.chunk.js.map": "/geo-energy-web/static/js/2.aea8a87c.chunk.js.map",
     "index.html": "/geo-energy-web/index.html",
-    "precache-manifest.cc5ec7d96c870c3ad85fe1d91ec865b7.js": "/geo-energy-web/precache-manifest.cc5ec7d96c870c3ad85fe1d91ec865b7.js",
+    "precache-manifest.18e422b3e90b2de84181d7abf978dec1.js": "/geo-energy-web/precache-manifest.18e422b3e90b2de84181d7abf978dec1.js",
     "service-worker.js": "/geo-energy-web/service-worker.js",
-    "static/css/2.6f6ba287.chunk.css.map": "/geo-energy-web/static/css/2.6f6ba287.chunk.css.map",
-    "static/css/main.8e780e84.chunk.css.map": "/geo-energy-web/static/css/main.8e780e84.chunk.css.map",
-    "static/js/2.42247420.chunk.js.LICENSE.txt": "/geo-energy-web/static/js/2.42247420.chunk.js.LICENSE.txt",
+    "static/css/2.5b24332c.chunk.css.map": "/geo-energy-web/static/css/2.5b24332c.chunk.css.map",
+    "static/css/main.9a1b6eb8.chunk.css.map": "/geo-energy-web/static/css/main.9a1b6eb8.chunk.css.map",
+    "static/js/2.aea8a87c.chunk.js.LICENSE.txt": "/geo-energy-web/static/js/2.aea8a87c.chunk.js.LICENSE.txt",
     "static/media/AGEOCOL.png": "/geo-energy-web/static/media/AGEOCOL.4d2f1b00.png",
     "static/media/Abdelhakim Djebara Argelia.png": "/geo-energy-web/static/media/Abdelhakim Djebara Argelia.efe02ac3.png",
     "static/media/Abdelkader Filali Argelia.png": "/geo-energy-web/static/media/Abdelkader Filali Argelia.fae0b606.png",
@@ -35,7 +35,7 @@
     "static/media/Dark Next.svg": "/geo-energy-web/static/media/Dark Next.8670b7cb.svg",
     "static/media/Dark Prev.svg": "/geo-energy-web/static/media/Dark Prev.77abec9f.svg",
     "static/media/Edificio Rectoría IBERO.jpg": "/geo-energy-web/static/media/Edificio Rectoría IBERO.395b82a4.jpg",
-    "static/media/Escudo_Universidad_de_Medellin.svg": "/geo-energy-web/static/media/Escudo_Universidad_de_Medellin.272c8f1b.svg",
+    "static/media/Escudo_Universidad_de_Medellin.svg": "/geo-energy-web/static/media/Escudo_Universidad_de_Medellin.947f3291.svg",
     "static/media/Fernando Rivas Mexico.png": "/geo-energy-web/static/media/Fernando Rivas Mexico.acfe7fad.png",
     "static/media/France Rennes.jpg": "/geo-energy-web/static/media/France Rennes.f0fd0aa9.jpg",
     "static/media/Gallery.css": "/geo-energy-web/static/media/Gallery Background Image.dd765578.png",
@@ -140,10 +140,10 @@
     "static/media/wing.png": "/geo-energy-web/static/media/wing.bf083e8b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.1648d9b0.js",
-    "static/css/2.6f6ba287.chunk.css",
-    "static/js/2.42247420.chunk.js",
-    "static/css/main.8e780e84.chunk.css",
-    "static/js/main.b9838961.chunk.js"
+    "static/js/runtime-main.d7eab0ab.js",
+    "static/css/2.5b24332c.chunk.css",
+    "static/js/2.aea8a87c.chunk.js",
+    "static/css/main.9a1b6eb8.chunk.css",
+    "static/js/main.2a22c7d8.chunk.js"
   ]
 }
