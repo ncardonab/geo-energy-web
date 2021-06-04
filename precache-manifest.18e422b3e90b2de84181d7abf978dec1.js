@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f6696f6686ff198635eda18f1583a006",
+    "revision": "897b24295359e286a96d30bad39b38d0",
     "url": "/geo-energy-web/index.html"
   },
   {
-    "revision": "3c1921c13b1bc2bae744",
-    "url": "/geo-energy-web/static/css/2.6f6ba287.chunk.css"
+    "revision": "acc7baad606b38e6cee0",
+    "url": "/geo-energy-web/static/css/2.5b24332c.chunk.css"
   },
   {
-    "revision": "5387b8d33d621d77145b",
-    "url": "/geo-energy-web/static/css/main.8e780e84.chunk.css"
+    "revision": "bdf84d52b4090946a56f",
+    "url": "/geo-energy-web/static/css/main.9a1b6eb8.chunk.css"
   },
   {
-    "revision": "3c1921c13b1bc2bae744",
-    "url": "/geo-energy-web/static/js/2.42247420.chunk.js"
+    "revision": "acc7baad606b38e6cee0",
+    "url": "/geo-energy-web/static/js/2.aea8a87c.chunk.js"
   },
   {
-    "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/geo-energy-web/static/js/2.42247420.chunk.js.LICENSE.txt"
+    "revision": "9b318b6fb13190fe82c0677e9264b3c7",
+    "url": "/geo-energy-web/static/js/2.aea8a87c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5387b8d33d621d77145b",
-    "url": "/geo-energy-web/static/js/main.b9838961.chunk.js"
+    "revision": "bdf84d52b4090946a56f",
+    "url": "/geo-energy-web/static/js/main.2a22c7d8.chunk.js"
   },
   {
-    "revision": "406093480f820b8b1c80",
-    "url": "/geo-energy-web/static/js/runtime-main.1648d9b0.js"
+    "revision": "4fa93124734aaf817ab0",
+    "url": "/geo-energy-web/static/js/runtime-main.d7eab0ab.js"
   },
   {
     "revision": "4d2f1b00277fa7e3bb739e768544e1b8",
@@ -112,8 +112,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/geo-energy-web/static/media/Edificio Rectoría IBERO.395b82a4.jpg"
   },
   {
-    "revision": "272c8f1bbf9f22e337c467aa38645d01",
-    "url": "/geo-energy-web/static/media/Escudo_Universidad_de_Medellin.272c8f1b.svg"
+    "revision": "947f3291f67fbfb19b68e232d11ad57e",
+    "url": "/geo-energy-web/static/media/Escudo_Universidad_de_Medellin.947f3291.svg"
   },
   {
     "revision": "acfe7fad5325fb9c2b174c09dbd590b6",
