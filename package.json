@@ -17,7 +17,7 @@
     "reactstrap": "^8.5.1"
   },
   "scripts": {
-    "predeploy": "yarn build",
+    "predeploy": "yarn build && echo igcp636.com > ./build/CNAME",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
