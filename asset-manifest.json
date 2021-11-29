@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.75971172.chunk.css",
-    "main.js": "/static/js/main.3a35e37a.chunk.js",
-    "main.js.map": "/static/js/main.3a35e37a.chunk.js.map",
+    "main.css": "/static/css/main.d182a55d.chunk.css",
+    "main.js": "/static/js/main.31cd7342.chunk.js",
+    "main.js.map": "/static/js/main.31cd7342.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5f51c4e4.js",
     "runtime-main.js.map": "/static/js/runtime-main.5f51c4e4.js.map",
-    "static/css/2.fa349ff9.chunk.css": "/static/css/2.fa349ff9.chunk.css",
-    "static/js/2.aea8a87c.chunk.js": "/static/js/2.aea8a87c.chunk.js",
-    "static/js/2.aea8a87c.chunk.js.map": "/static/js/2.aea8a87c.chunk.js.map",
+    "static/css/2.0f94556b.chunk.css": "/static/css/2.0f94556b.chunk.css",
+    "static/js/2.ff1b073e.chunk.js": "/static/js/2.ff1b073e.chunk.js",
+    "static/js/2.ff1b073e.chunk.js.map": "/static/js/2.ff1b073e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0d6f3cbea7b27a24ab7bd0c8c79513cb.js": "/precache-manifest.0d6f3cbea7b27a24ab7bd0c8c79513cb.js",
+    "precache-manifest.f2905d86526bcbc91adf40d154607eec.js": "/precache-manifest.f2905d86526bcbc91adf40d154607eec.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.fa349ff9.chunk.css.map": "/static/css/2.fa349ff9.chunk.css.map",
-    "static/css/main.75971172.chunk.css.map": "/static/css/main.75971172.chunk.css.map",
-    "static/js/2.aea8a87c.chunk.js.LICENSE.txt": "/static/js/2.aea8a87c.chunk.js.LICENSE.txt",
+    "static/css/2.0f94556b.chunk.css.map": "/static/css/2.0f94556b.chunk.css.map",
+    "static/css/main.d182a55d.chunk.css.map": "/static/css/main.d182a55d.chunk.css.map",
+    "static/js/2.ff1b073e.chunk.js.LICENSE.txt": "/static/js/2.ff1b073e.chunk.js.LICENSE.txt",
     "static/media/AGEOCOL.png": "/static/media/AGEOCOL.4d2f1b00.png",
     "static/media/Abdelhakim Djebara Argelia.png": "/static/media/Abdelhakim Djebara Argelia.efe02ac3.png",
     "static/media/Abdelkader Filali Argelia.png": "/static/media/Abdelkader Filali Argelia.fae0b606.png",
@@ -135,15 +135,13 @@
     "static/media/udm.png": "/static/media/udm.0ded9bfb.png",
     "static/media/umons.png": "/static/media/umons.b2778a3c.png",
     "static/media/video-camera-gray.svg": "/static/media/video-camera-gray.5cefeb28.svg",
-    "static/media/webinar1.jpg": "/static/media/webinar1.2de1b050.jpg",
-    "static/media/webinar2.jpg": "/static/media/webinar2.0842acc8.jpg",
     "static/media/wing.png": "/static/media/wing.bf083e8b.png"
   },
   "entrypoints": [
     "static/js/runtime-main.5f51c4e4.js",
-    "static/css/2.fa349ff9.chunk.css",
-    "static/js/2.aea8a87c.chunk.js",
-    "static/css/main.75971172.chunk.css",
-    "static/js/main.3a35e37a.chunk.js"
+    "static/css/2.0f94556b.chunk.css",
+    "static/js/2.ff1b073e.chunk.js",
+    "static/css/main.d182a55d.chunk.css",
+    "static/js/main.31cd7342.chunk.js"
   ]
 }
