@@ -19,14 +19,9 @@ function UpcomingEvent({ info, isFirst, isLast }) {
     "December",
   ];
 
-  const { date, activityManager, description, url, location } = info;
-  const month = months[date.getMonth()].substring(0, 3);
-  const day = date.getDate();
-  const hours = date.getHours();
-  const minutes =
-    date.getMinutes().toString().length === 1
-      ? "0" + date.getMinutes()
-      : date.getMinutes();
+  let { date, eventManager, description, url, isVirtual } = info;
+  let { month, day, time } = date;
+  month = months[+month - 1].substring(0, 3);
 
   return (
     <div className={`UpcomingEvent ${isFirst} ${isLast}`}>
@@ -35,23 +30,17 @@ function UpcomingEvent({ info, isFirst, isLast }) {
           <div className="upcoming-event-date">
             {day} {month}
           </div>
-          <div className="upcoming-event-hour">
-            {hours}:{minutes}
-          </div>
+          <div className="upcoming-event-hour">{time}</div>
         </div>
         <div className="upcoming-event-description-container">
-          <div className="upcoming-event-manager">{activityManager}</div>
+          <div className="upcoming-event-manager">{eventManager}</div>
           <div className="upcoming-event-description">{description}</div>
         </div>
-        <a
-          target="_blank"
-          rel="noreferrer noopener"
-          href={location ? location : url}
-        >
+        <a target="_blank" rel="noreferrer noopener" href={url}>
           <img
-            src={location ? pinIcon : cameraIcon}
+            src={isVirtual ? pinIcon : cameraIcon}
             alt="icon"
-            className={`icon-${location ? "pin" : "camera"}`}
+            className={`icon-${isVirtual ? "pin" : "camera"}`}
           />
         </a>
       </div>

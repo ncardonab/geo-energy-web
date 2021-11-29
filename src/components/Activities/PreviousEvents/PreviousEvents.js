@@ -1,6 +1,6 @@
-import React from "react";
-import { events } from "./PreviousEventsInfo";
+import React, { useContext } from "react";
 import "./PreviousEvents.css";
+import { eventsContext } from "../eventsContext";
 
 function ImageCard({ event }) {
   const months = [
@@ -18,12 +18,13 @@ function ImageCard({ event }) {
     "December",
   ];
 
-  const { name, description, background, url, date } = event;
+  // console.table(event);
+  const { description, backgroundImage, url, date } = event;
 
-  const day = date.getDate();
-  const month = months[date.getMonth()].substring(0, 3);
+  let { day, month } = date;
+  month = months[+month - 1].substring(0, 3);
 
-  const bgImg = `url("${background}")`;
+  const bgImg = `url("${backgroundImage}")`;
 
   const backgroundImgStyle = {
     backgroundImage: bgImg,
@@ -47,14 +48,7 @@ function ImageCard({ event }) {
             <div className="image-card-text-day">{day}</div>
             <div className="image-card-text-month">{month}</div>
           </div>
-          <a
-            className="image-card-text"
-            href={url ? url : "#"}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {name}
-          </a>
+          <div>{description}</div>
         </div>
       </div>
     </div>
@@ -63,18 +57,37 @@ function ImageCard({ event }) {
 
 function EventsGroupedByYear({ events, year }) {
   const eventsSortedByDate = events.sort(
-    (firstEvent, secondEvent) =>
-      secondEvent.date.getDate() - firstEvent.date.getDate()
+    (firstEvent, secondEvent) => secondEvent.date.day - firstEvent.date.day
   );
   const eventsSortedByMonth = eventsSortedByDate.sort(
-    (firstEvent, secondEvent) =>
-      secondEvent.date.getMonth() - firstEvent.date.getMonth()
+    (firstEvent, secondEvent) => secondEvent.date.month - firstEvent.date.month
   );
+
+  const eventsFilteredByDate = eventsSortedByMonth.filter((event) => {
+    const { year, month, day } = event.date;
+    const currentYear = new Date().getFullYear();
+    const currentMonth = new Date().getMonth() + 1;
+    const currentDay = new Date().getDate();
+
+    if (year > currentYear) {
+      return false;
+    } else if (year === currentYear) {
+      if (month > currentMonth) {
+        return false;
+      } else if (month === currentMonth) {
+        if (day >= currentDay) {
+          return false;
+        }
+      }
+    }
+    return true;
+  });
+
   return (
     <div className="EventsGroupedByYear">
       <div className="egby-year">{year}</div>
       <div className="egby-container">
-        {eventsSortedByMonth.map((event, index) => (
+        {eventsFilteredByDate.map((event, index) => (
           <ImageCard event={event} key={index} />
         ))}
       </div>
@@ -83,16 +96,18 @@ function EventsGroupedByYear({ events, year }) {
 }
 
 function PreviousEvents() {
+  const events = useContext(eventsContext);
+
   const eventsGroupedByYearMap = new Map();
 
   // Creating a Set of years that are in the events array
-  const years = new Set(events.map((event) => event.date.getFullYear()));
+  const years = new Set(events.map((event) => event.date.year));
 
   // Filtering the events by the years and adding it to the map
   years.forEach((year) => {
     eventsGroupedByYearMap.set(
       year,
-      events.filter((event) => event.date.getFullYear() === year)
+      events.filter((event) => event.date.year === year)
     );
   });
 
