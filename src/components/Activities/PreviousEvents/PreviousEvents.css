@@ -79,7 +79,9 @@
 }
 
 .image-card-info-container:hover {
+  transition: all 0.5s ease-in-out;
   transform: scale(1.023);
+  height: auto;
 }
 
 .image-card-info-container:hover > .image-card-notch {
@@ -106,6 +108,13 @@
 .image-card-text-container {
   display: flex;
   align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.image-card-text-container:hover {
+  overflow: visible;
+  white-space: normal;
 }
 
 .image-card-text-date-container {

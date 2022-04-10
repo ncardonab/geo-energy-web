@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Gallery.css";
-import { photos } from "./GalleryInfo";
+import { getAsset } from "../../common/getAsset";
 
 function ImageCard({ photo }) {
   const { image, description } = photo;
@@ -25,9 +25,7 @@ function ImageCard({ photo }) {
       <div className="image-card-info-container">
         <div className="image-card-notch"></div>
         <div className="image-card-text-container">
-          <div className="image-card-text">
-            {description.substring(0, 40) + "..."}
-          </div>
+          <div className="image-card-description">{description}</div>
         </div>
       </div>
     </div>
@@ -35,6 +33,27 @@ function ImageCard({ photo }) {
 }
 
 function Gallery() {
+  const [gallery, setGallery] = useState([]);
+
+  useEffect(() => {
+    let mounted = true;
+
+    const fetchGallery = async () => {
+      const fetchedGallery = await getAsset("gallery");
+
+      if (mounted) {
+        const gallery = [...fetchedGallery.data];
+
+        console.log(gallery);
+
+        setGallery(gallery);
+      }
+    };
+    fetchGallery();
+
+    return () => (mounted = false);
+  }, []);
+
   return (
     <div className="Gallery">
       <div className="gallery-header">
@@ -42,7 +61,7 @@ function Gallery() {
       </div>
       <div className="gallery-section">
         <div className="gallery-section-container">
-          {photos.map((photo, index) => (
+          {gallery.map((photo, index) => (
             <ImageCard photo={photo} key={index} />
           ))}
         </div>

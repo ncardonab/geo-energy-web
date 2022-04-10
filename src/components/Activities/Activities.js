@@ -3,29 +3,10 @@ import Header from "./Header/Header";
 import PreviousEvents from "./PreviousEvents/PreviousEvents";
 import UpcomingEvents from "./UpcomingEvents/UpcomingEvents";
 import { eventsContext } from "./eventsContext";
+import { getAsset } from "../../common/getAsset";
 
 function Activities() {
   const [events, setEvents] = useState([]);
-
-  const getEventsFrom = async (url) => {
-    try {
-      const response = await fetch(url);
-
-      if (!response.ok) {
-        throw new Error(`${response.status} ${response.statusText}`);
-      }
-
-      const data = await response.json();
-
-      return { data, error: null };
-    } catch (error) {
-      console.log(error);
-      return {
-        data: null,
-        error: error.message,
-      };
-    }
-  };
 
   const parse24HourTo12Hour = (ISOString) => {
     const index = ISOString.indexOf("T");
@@ -52,9 +33,7 @@ function Activities() {
   useEffect(() => {
     let mounted = true;
     const fetchEvents = async () => {
-      const fetchedEvents = await getEventsFrom(
-        "https://igcp636-api.herokuapp.com/events"
-      );
+      const fetchedEvents = await getAsset("events");
 
       if (mounted) {
         const events = [...fetchedEvents.data];

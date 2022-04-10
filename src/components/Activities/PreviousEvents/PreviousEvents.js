@@ -48,7 +48,9 @@ function ImageCard({ event }) {
             <div className="image-card-text-day">{day}</div>
             <div className="image-card-text-month">{month}</div>
           </div>
-          <div>{description}</div>
+          <div className="image-card-description">
+            <a href={`${url}`}>{description}</a>
+          </div>
         </div>
       </div>
     </div>
