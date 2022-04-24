@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a6f45c92b85a277f9656568a472cf41b",
+    "revision": "eb87015a65c2da776773107f61b90654",
     "url": "/index.html"
   },
   {
-    "revision": "2e35c9a666400a8115da",
+    "revision": "c938f2590367274027ba",
     "url": "/static/css/2.0f94556b.chunk.css"
   },
   {
-    "revision": "0f6ab5dd28896ed06826",
-    "url": "/static/css/main.d182a55d.chunk.css"
+    "revision": "72769ee47179cbd48635",
+    "url": "/static/css/main.7878f4aa.chunk.css"
   },
   {
-    "revision": "2e35c9a666400a8115da",
-    "url": "/static/js/2.ff1b073e.chunk.js"
+    "revision": "c938f2590367274027ba",
+    "url": "/static/js/2.2e0e65f2.chunk.js"
   },
   {
     "revision": "9b318b6fb13190fe82c0677e9264b3c7",
-    "url": "/static/js/2.ff1b073e.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.2e0e65f2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0f6ab5dd28896ed06826",
-    "url": "/static/js/main.31cd7342.chunk.js"
+    "revision": "72769ee47179cbd48635",
+    "url": "/static/js/main.276ef5da.chunk.js"
   },
   {
     "revision": "3701a324fe23b0e77728",
@@ -344,10 +344,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Women in geothermal Energy.bf4f556b.png"
   },
   {
-    "revision": "82bf59795b876f920bf00b6fdc4d897d",
-    "url": "/static/media/adventure-calm-clouds-dawn-414171.82bf5979.jpg"
-  },
-  {
     "revision": "46db4c808f85e01cd6f421ad674aa2a6",
     "url": "/static/media/akita Japon.46db4c80.jpg"
   },
@@ -362,10 +358,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d493d2b873c8733de480e89e8b4efe69",
     "url": "/static/media/cega.d493d2b8.png"
-  },
-  {
-    "revision": "5c346d226ac5209010342d920b46e19e",
-    "url": "/static/media/energia-geotermica-geiser2-600x399.5c346d22.jpg"
   },
   {
     "revision": "5682e610831e7e45c563c9e1044c28bc",
@@ -410,10 +402,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fb240aa83d57a44191a4dd0ad0f18ab8",
     "url": "/static/media/gmail.fb240aa8.svg"
-  },
-  {
-    "revision": "d1fe53aac35e51e931e4bbd8eb3cd237",
-    "url": "/static/media/grand-prismatics-bacterial-color-3864527_1920.d1fe53aa.jpg"
   },
   {
     "revision": "c55e9ecd403c74bb2dce5f249efd22b5",
@@ -482,10 +470,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "80b2b8cd5946fb3d9bc8be100f942da5",
     "url": "/static/media/mountain.80b2b8cd.svg"
-  },
-  {
-    "revision": "5c720e41019b61f524d6004adac29c60",
-    "url": "/static/media/nature-3437545_1920.5c720e41.jpg"
   },
   {
     "revision": "12795bda003cd08f4dac0ae555005b80",
