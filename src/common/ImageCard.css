@@ -1,0 +1,101 @@
+/* Image card styles */
+
+.image-card-background-img {
+    filter: brightness(90%);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .image-card {
+    width: 226px;
+    height: 286px;
+    border-radius: 8px;
+    margin: 20px 0 0 20px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
+    -moz-box-shadow: var(--box-shadow);
+  }
+  
+  .image-card:hover {
+    transform: scale(1.023);
+  }
+  
+  .image-card-info-container {
+    position: relative;
+    top: -5px;
+    height: 78px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
+    -moz-box-shadow: var(--box-shadow);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .image-card-info-container:hover {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.023);
+    cursor: pointer;
+    /* height: fit-content; */
+  }
+  
+  .image-card-info-container:hover > .image-card-notch {
+    display: block;
+    opacity: 1;
+  }
+  
+  .image-card-notch {
+    opacity: 0;
+    position: absolute;
+    height: 10px;
+    width: 30%;
+    border-radius: 5px;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    transition: all 0.25s ease-in-out;
+    box-shadow: -1px 0px 12px -1px rgba(148, 148, 148, 0.75);
+    -webkit-box-shadow: -1px 0px 12px -1px rgba(148, 148, 148, 0.75);
+    -moz-box-shadow: -1px 0px 12px -1px rgba(148, 148, 148, 0.75);
+  }
+  
+  .image-card-text-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .image-card-text-container:hover {
+    /* overflow: visible;
+    white-space: normal; */
+  }
+  
+  .image-card-text-date-container {
+    text-align: center;
+    margin-right: 20px;
+  }
+  
+  .image-card-text-day,
+  .image-card-text-month {
+    font-size: 24px;
+    color: #474747;
+    font-weight: normal;
+  }
+  
+  .image-card-text {
+    color: #474747;
+    font-size: 17.5px;
+    font-weight: 300;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .image-card-text:hover {
+    text-decoration: underline;
+  }

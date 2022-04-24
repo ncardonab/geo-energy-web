@@ -40,7 +40,7 @@
   justify-content: center;
 }
 
-/* Image card styles */
+/* Image card styles
 
 .image-card-background-img {
   filter: brightness(90%);
@@ -139,7 +139,7 @@
 
 .image-card-text:hover {
   text-decoration: underline;
-}
+} */
 
 @media screen and (min-width: 1024px) {
   .previous-events-header {

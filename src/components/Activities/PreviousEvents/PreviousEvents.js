@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
 import "./PreviousEvents.css";
+import "../../../common/ImageCard.css";
 import { eventsContext } from "../eventsContext";
 
-function ImageCard({ event }) {
+function ImageCard({ event }, hasDate) {
   const months = [
     "January",
     "February",
@@ -49,7 +50,9 @@ function ImageCard({ event }) {
             <div className="image-card-text-month">{month}</div>
           </div>
           <div className="image-card-description">
-            <a href={`${url}`}>{description}</a>
+            <a href={`${url}`} target="_blank">
+              {description}
+            </a>
           </div>
         </div>
       </div>
@@ -90,7 +93,7 @@ function EventsGroupedByYear({ events, year }) {
       <div className="egby-year">{year}</div>
       <div className="egby-container">
         {eventsFilteredByDate.map((event, index) => (
-          <ImageCard event={event} key={index} />
+          <ImageCard event={event} hasDate={true} key={index} />
         ))}
       </div>
     </div>

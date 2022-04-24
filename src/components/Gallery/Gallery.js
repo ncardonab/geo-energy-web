@@ -1,8 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import "./Gallery.css";
+import "../../common/ImageCard.css";
 import { getAsset } from "../../common/getAsset";
+import Modal from "../../common/Modal/Modal";
+import galleryContext from "./galleryContext";
 
-function ImageCard({ photo }) {
+function ImageCard({ photo, setShowModal, selectPhoto }) {
   const { image, description } = photo;
 
   const bgImg = `url("${image}")`;
@@ -16,16 +19,21 @@ function ImageCard({ photo }) {
     borderRadius: "8px 8px 0px 0px",
   };
 
+  const openModal = () => {
+    setShowModal(true);
+    selectPhoto(photo);
+  };
+
   return (
     <div className="image-card">
       <div
         className="image-card-background-img"
         style={backgroundImgStyle}
       ></div>
-      <div className="image-card-info-container">
+      <div className="image-card-info-container" onClick={openModal}>
         <div className="image-card-notch"></div>
         <div className="image-card-text-container">
-          <div className="image-card-description">{description}</div>
+          <div className="image-card-description-">{description}</div>
         </div>
       </div>
     </div>
@@ -34,6 +42,8 @@ function ImageCard({ photo }) {
 
 function Gallery() {
   const [gallery, setGallery] = useState([]);
+  const [showModal, setShowModal] = useState(false);
+  const [selectedPhoto, setSelectedPhoto] = useState({});
 
   useEffect(() => {
     let mounted = true;
@@ -44,8 +54,6 @@ function Gallery() {
       if (mounted) {
         const gallery = [...fetchedGallery.data];
 
-        console.log(gallery);
-
         setGallery(gallery);
       }
     };
@@ -54,19 +62,42 @@ function Gallery() {
     return () => (mounted = false);
   }, []);
 
-  return (
-    <div className="Gallery">
-      <div className="gallery-header">
-        <h1 className="gallery-title">Gallery</h1>
-      </div>
-      <div className="gallery-section">
-        <div className="gallery-section-container">
-          {gallery.map((photo, index) => (
-            <ImageCard photo={photo} key={index} />
-          ))}
+  const value = { gallery, showModal, setShowModal };
+
+  const setShowModalFunction = (value) => {
+    setShowModal(value);
+  };
+
+  const renderGallery = () => {
+    return (
+      <div className="Gallery">
+        <div className="gallery-header">
+          <h1 className="gallery-title">Gallery</h1>
+        </div>
+        <div className="gallery-section">
+          <div className="gallery-section-container">
+            {gallery.map((photo, index) => (
+              <ImageCard
+                photo={photo}
+                key={index}
+                showModal={showModal}
+                setShowModal={setShowModalFunction}
+                selectPhoto={setSelectedPhoto}
+              />
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    );
+  };
+
+  return (
+    <galleryContext.Provider value={value}>
+      {showModal && (
+        <Modal setShowModal={setShowModalFunction} photo={selectedPhoto} />
+      )}
+      {renderGallery()}
+    </galleryContext.Provider>
   );
 }
 
