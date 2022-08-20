@@ -18,7 +18,7 @@ function ProjectsAndInstitutions() {
             return <Image key={index} info={info}></Image>;
           })}
         </div>
-        <h1 className="institutions-title">Institutions Involved</h1>
+        <h1 className="institutions-title">Leading Institutions</h1>
         <div className="institutions-imgs">
           {institutions.map((info, index) => {
             return <Image key={index} info={info}></Image>;

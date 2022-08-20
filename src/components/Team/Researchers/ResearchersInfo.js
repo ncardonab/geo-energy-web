@@ -211,8 +211,7 @@ export const researchers = [
     currentMembershipCountry: "Sweden",
     isLeader: false,
     isSecretary: false,
-    linkedIn:
-      "https://www.energy.kth.se/applied-thermodynamics/project-groups/geoenergy",
+    linkedIn: "https://www.linkedin.com/in/jos%C3%A9-acu%C3%B1a-9b648877",
     currentInstitution: "KTH Royal Institute of Technology",
     keywords:
       "Ground Source Heat Pumps, Distributed Temperature Sensing, Borehole Heat Exchangers",
