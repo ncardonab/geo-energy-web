@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "eb87015a65c2da776773107f61b90654",
+    "revision": "4a4d82f147cf27c34b3c800283be2f31",
     "url": "/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.0f94556b.chunk.css"
   },
   {
-    "revision": "72769ee47179cbd48635",
-    "url": "/static/css/main.7878f4aa.chunk.css"
+    "revision": "52038c1711afef2ba5a3",
+    "url": "/static/css/main.8559ba13.chunk.css"
   },
   {
     "revision": "c938f2590367274027ba",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.2e0e65f2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "72769ee47179cbd48635",
-    "url": "/static/js/main.276ef5da.chunk.js"
+    "revision": "52038c1711afef2ba5a3",
+    "url": "/static/js/main.c395344c.chunk.js"
   },
   {
     "revision": "3701a324fe23b0e77728",
@@ -76,8 +76,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Cascada.b579e352.png"
   },
   {
-    "revision": "520ebf1ed1dccd99c196a67e66c035bf",
-    "url": "/static/media/Checklist.520ebf1e.svg"
+    "revision": "00914e1b4431739ca1c4f3fb4e2131b5",
+    "url": "/static/media/Checklist.00914e1b.svg"
   },
   {
     "revision": "65c84ffe1fe91d9b4a194da672c2c2da",
@@ -100,20 +100,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Daniela Blessent Colombia.9253da93.png"
   },
   {
-    "revision": "8670b7cb41f808701bec1c28e1f4d8af",
-    "url": "/static/media/Dark Next.8670b7cb.svg"
+    "revision": "d520c3217c34e57559db45223ba8872e",
+    "url": "/static/media/Dark Next.d520c321.svg"
   },
   {
-    "revision": "77abec9f5556dd4c0cd6d8ec83813684",
-    "url": "/static/media/Dark Prev.77abec9f.svg"
+    "revision": "53da567f5afd9c61ce28da10fa2aff11",
+    "url": "/static/media/Dark Prev.53da567f.svg"
   },
   {
     "revision": "395b82a4346e31fcfa60ac6e628b58a0",
     "url": "/static/media/Edificio Rectoría IBERO.395b82a4.jpg"
   },
   {
-    "revision": "947f3291f67fbfb19b68e232d11ad57e",
-    "url": "/static/media/Escudo_Universidad_de_Medellin.947f3291.svg"
+    "revision": "272c8f1bbf9f22e337c467aa38645d01",
+    "url": "/static/media/Escudo_Universidad_de_Medellin.272c8f1b.svg"
   },
   {
     "revision": "acfe7fad5325fb9c2b174c09dbd590b6",
@@ -192,8 +192,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Linda Daniele Chile.ce86fa55.png"
   },
   {
-    "revision": "0f69dd6821f5eb49b19189ade5a766ce",
-    "url": "/static/media/LinkedIn Logo.0f69dd68.svg"
+    "revision": "6c64829f53da46f5d5238608c3c4b57d",
+    "url": "/static/media/LinkedIn Logo.6c64829f.svg"
   },
   {
     "revision": "1803405c476df3133b7be181285c57d6",
@@ -232,8 +232,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Mohammed Moundji Argelia.5d9c7cf9.png"
   },
   {
-    "revision": "4dc2a3009a0bc3851ea0f4c7b79d791f",
-    "url": "/static/media/Next.4dc2a300.svg"
+    "revision": "bbf58d60e7e0b0fbb1ebe363a08f0048",
+    "url": "/static/media/Next.bbf58d60.svg"
   },
   {
     "revision": "99955f2e5403807f423212fcb3d032a9",
@@ -260,8 +260,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Pietro Teatini Italy.4b3dac14.png"
   },
   {
-    "revision": "81ef1fad7729d36b43020d7c782d1a92",
-    "url": "/static/media/Prev.81ef1fad.svg"
+    "revision": "cee67e40d96c8551c9b981dc5ed0bb80",
+    "url": "/static/media/Prev.cee67e40.svg"
   },
   {
     "revision": "c43e7bfc373f044bf239f39c0dc58ce6",
@@ -404,8 +404,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/gmail.fb240aa8.svg"
   },
   {
-    "revision": "c55e9ecd403c74bb2dce5f249efd22b5",
-    "url": "/static/media/group.c55e9ecd.svg"
+    "revision": "fa16efd5f96e5634de05df23834f266f",
+    "url": "/static/media/group.fa16efd5.svg"
   },
   {
     "revision": "2e200b0a852cb590c85ab1f49e499b62",
@@ -460,32 +460,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/logo UPTC España.06b9e7f3.png"
   },
   {
-    "revision": "8a61fc3031d42496da015aa6a11ed179",
-    "url": "/static/media/maintenance.8a61fc30.svg"
+    "revision": "e9802078026f1e3725bdea77247a8f63",
+    "url": "/static/media/maintenance.e9802078.svg"
   },
   {
-    "revision": "8473c4ea703d578b66e8e4d908524de9",
-    "url": "/static/media/maps-and-flags.8473c4ea.svg"
+    "revision": "196dcc1958db245276da7bc248d905fb",
+    "url": "/static/media/maps-and-flags.196dcc19.svg"
   },
   {
-    "revision": "80b2b8cd5946fb3d9bc8be100f942da5",
-    "url": "/static/media/mountain.80b2b8cd.svg"
+    "revision": "142eaa600f1e61bf9743a1768170e44c",
+    "url": "/static/media/mountain.142eaa60.svg"
   },
   {
     "revision": "12795bda003cd08f4dac0ae555005b80",
     "url": "/static/media/padova.12795bda.png"
   },
   {
-    "revision": "f67606ab41408eacc8ddcbf5dba82d7b",
-    "url": "/static/media/pin-gray.f67606ab.svg"
+    "revision": "c3cfe755f7e2bf94c92f62b4047ecfc6",
+    "url": "/static/media/pin-gray.c3cfe755.svg"
   },
   {
     "revision": "212d4b1ca9f829b15d31680f47cca625",
     "url": "/static/media/rennes.212d4b1c.png"
   },
   {
-    "revision": "4789840fffd56250945bba90c82067f6",
-    "url": "/static/media/school.4789840f.svg"
+    "revision": "c2cce9e785f20437686a14742d8f2343",
+    "url": "/static/media/school.c2cce9e7.svg"
   },
   {
     "revision": "4b75052a99a89e522a3a524554fe4c40",
@@ -508,8 +508,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/umons.b2778a3c.png"
   },
   {
-    "revision": "5cefeb280786e96b6eae4f3c2c01f760",
-    "url": "/static/media/video-camera-gray.5cefeb28.svg"
+    "revision": "3778f3532c513e0b6a64b1c62958c219",
+    "url": "/static/media/video-camera-gray.3778f353.svg"
   },
   {
     "revision": "bf083e8b8bc6b97a8d0f3975c3ef7c86",
